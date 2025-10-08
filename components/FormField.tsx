@@ -29,7 +29,7 @@ const FormField = <T extends FieldValues>({
       name={name}
       render={({ field }) => (
         <FormItem>
-          <FormLabel className="label">{label}</FormLabel>
+          <FormLabel className="label">{label}</FormLabel>   
           <FormControl>
             <Input
               className="input"
@@ -44,5 +44,5 @@ const FormField = <T extends FieldValues>({
     />
   );
 };
-
-export default FormField;
+//label : here its  reusable component  for name email  and password with dynamic placeholder so it will say your name , your email etc  below taht we spread the properties of field ...
+export default FormField; 
